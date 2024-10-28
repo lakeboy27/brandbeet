@@ -1,0 +1,354 @@
+@font-face {
+    font-family: fontone;
+    src: url(./asset/font.ttf);
+}
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: fontone ;
+    font-weight: 400;
+}
+html,body{ 
+    height: 100%;
+    width :100% ; 
+}
+#id{ 
+    width: 100%;
+    min-height : 100vh ; 
+}
+nav{
+    position: fixed;
+    top : 0 ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 15vh;
+    /* background-color: aquamarine; */
+    padding : 0vw 3vw ; 
+    mix-blend-mode: difference;
+    z-index: 9;
+}
+.leftnav{
+    font-size: 1.5vw; 
+    height : 6vh ; 
+    /* background-color: blueviolet; */
+    overflow: hidden;
+    cursor : pointer ; 
+}
+.leftnav h1{
+    color: #fff;
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+}
+
+.leftnav:hover .logo{
+    margin-top: -5.5vh;
+}
+.rightnav{
+    font-size: .8vw; 
+    height : 3vh ; 
+    /* background-color: blueviolet; */
+    overflow: hidden;
+    cursor : pointer ; 
+}
+.rightnav h2{
+    color: #fff;
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+}
+
+.rightnav:hover .navcontent{
+    margin-top: -3vh;
+}
+.part1{
+    width : 100% ; 
+    height: 100vh ;
+    background-color: #000 ;
+    overflow: hidden;
+}
+.contentpart1{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; 
+    height : 100vh ; 
+    /* background-color: rebeccapurple; */
+}
+.rotatediv {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    width: 200vw;
+    height: 200vh;
+    background-color: #000;
+    gap: 3vw;
+    scale: 1;
+}
+.rowdiv{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    width: calc(200vw/5); 
+    height: 100%;
+    /* background-color: aliceblue; */
+}
+.imgdiv{
+    width: 100%;
+    height : calc(100% / 4 ); 
+    /* background-color: aquamarine; */
+    border-radius: 10px;
+    overflow: hidden;
+}
+.imgdiv img{
+    width:100%;
+}
+#rowdiv2{
+    margin-top: 13%;
+}
+#rowdiv3{
+    margin-top: 10%;
+}
+#rowdiv4{
+    margin-top: 8%;
+}
+#rowdiv3{
+    margin-top: 5%;
+}
+
+.overlay{ 
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: #00000000;
+    font-size: 5vw;
+}
+.overlay h1{
+    opacity: 0;
+}
+.scrolldown{ 
+    position : absolute ; 
+    bottom : 8% ; 
+    display : flex ; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1vh;
+    color:#fff;
+}
+.scrolldown h3{
+    font-size: 0.7vw ;
+}
+.scrollp {
+    width : 6vw ; 
+    height :2px ; 
+    border-radius: 50px ;
+    background-color: #ffffff55;
+}
+.scrolling {
+    width : 0 ; 
+    height :2px ; 
+    border-radius: 50px ;
+    background-color: #fff;
+}
+
+/* page2  */
+
+.part2{
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+}
+
+.roundwrap{
+    position: relative;
+    width: 100%;
+    height: 100px; 
+    /* background-color: aquamarine; */
+    overflow: hidden;
+    margin-top: -100px;
+}
+
+
+.round{
+    position: absolute;
+    left: 50%;
+    width: 150%;
+    height: 750%;
+    border-radius: 50%;
+    background-color: #fff;
+    transform: translate(-50%);
+}
+.content2{ 
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    overflow: hidden;
+}
+.textarea{
+    position: absolute;
+    /* font-size: 7vw; */
+    opacity: .2;
+    left: 5%;
+    overflow: hidden;
+    font-weight: 800;
+}
+.textareahover{
+    position: absolute;
+    left: 5%;
+    /* font-size: 7vw; */
+    /* white-space: nowrap; */
+    /* width: 0%; */
+    opacity: 1;
+    /* overflow: hidden; */
+}
+
+.textarea h1{
+    font-size: 7vw ;
+}
+.textarea h2{
+    font-size: 7vw ;
+    margin-left: 5vw;
+}
+.textareahover h1{
+    font-size: 7vw ;
+    width: 0%;
+    text-wrap: nowrap;
+    overflow: hidden;
+}
+.textareahover h2{
+    margin-left: 5vw;
+    font-size: 7vw ;
+    width: 0%;
+    text-wrap: nowrap;
+    overflow: hidden;
+}
+
+/* part-3 */
+
+.part3{ 
+    position: relative;
+    width: 100%;
+    height: 30vh;
+}
+.toppart3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3vw;
+    position: absolute;
+    top: -15vh;
+    width: 100%;
+    height: 15vh;
+    /* background-color: #f4b2b2; */
+}
+.toppart3 h4{
+    font-size: 1.5vw;
+    opacity: 0.5 ;
+}
+.cta{
+    display: flex;
+    gap: 1vw;
+}
+
+.ctabook{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #000;
+    padding: 1.5vw 2vw ;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.ctatext{
+    /* background-color: aliceblue; */
+    height: 3vh;
+    color: #fff;
+    overflow: hidden;
+}
+.ctatext h2{
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) .8s;
+    font-size: 1.2vw;
+}
+.ctabook:hover h2:nth-child(1){
+    margin-top: -3vh;
+}
+.ctabook2{ 
+    background-color: #797979;
+}
+.ctabook2 .ctatext{ 
+    color: #000;
+}
+.btmpart3{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 15vh;
+    background-color: #000;
+}
+
+/* part-4 */
+
+.part4{
+    display: flex;
+    width: 100%; 
+    height : 100vh; 
+    background-color: #fff;
+}
+.leftpart4{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3vw;
+    width: 50%;
+    height: 100%;
+}
+.leftpart4 h1{
+    font-size: 8vw;
+}
+.cirpart4{ 
+    display: flex;
+    align-items: center; 
+    justify-content: center ;
+    width: 7vw; 
+    height : 7vw; 
+    background-color: #f4f4f4;
+    border-radius: 50%;
+}
+.rghtpart4{
+    margin-top: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 40vh ;
+    width: 50%;
+    height: 90vh;
+    padding: 7vw;
+}
+.contentrightp4{
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    opacity: 0;
+}
+.contentrightp4 h1{
+    font-size: 2.5vw;
+}
+.contentrightp4 p{
+    font-size: 1.5vw;
+    width: 75%;
+}
+.page5{
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+}
